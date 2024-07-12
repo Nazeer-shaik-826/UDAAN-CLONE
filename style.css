@@ -1,0 +1,564 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* navbar css   */
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 68px;
+  background-color: white;
+  z-index: 1000;
+}
+
+/* Add z-index to other elements on your page */
+
+.other-content {
+  z-index: 999;
+}
+
+
+
+.input-type {
+  padding: 10px 5px 10px 30px;
+  border: 1px solid white;
+  width: 15vw;
+  background-image: url(IMAGES/SEARCH\ BAR.png);
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-color: lightgray;
+  outline: none;
+
+}
+
+.last-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.last-block a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.nav1 {
+  margin-right: 20px;
+}
+
+.nav2 {
+  margin-left: 20px;
+}
+
+.login-btn {
+  margin-left: 80px;
+  color: red;
+  border-color: rgba(209, 18, 18, 0.932);
+  padding: 10px;
+  background-color: white;
+}
+
+/*logo css*/
+/* Your existing styles */
+.logo {
+  width: 35px;
+}
+
+.logoblock {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+/* Images of background */
+.parent-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.parent-child {
+  position: relative;
+}
+
+.images {
+  display: flex;
+  white-space: nowrap;
+  animation: scrollImages 20s linear infinite;
+}
+
+.images img {
+  flex: 0 0 auto;
+  width: 33.33%;
+  height: 90vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 25vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+
+@keyframes scrollImages {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.content {
+  color: black;
+}
+
+.title {
+  font-size: 60px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: #d73c46;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.register-link {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* css for 2 section page categories */
+.container {
+  width: 100vw;
+  max-width: 100vw;
+  padding: 20px;
+  align-items: center;
+  margin: 20px;
+}
+
+
+.parent {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+}
+
+.parent p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: rgb(129, 129, 129);
+
+}
+
+.parent h1 {
+  font-size: 40px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 40px;
+
+}
+
+.category {
+  border: 1px solid white;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  /* Center items vertically */
+}
+
+.category img {
+  width: 70px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.category h3 {
+  margin: 0;
+}
+
+.category p {
+  margin: 0;
+  color: rgb(129, 129, 129);
+  font-size: 16px;
+}
+
+
+
+.arrow {
+  margin-left: auto;
+}
+
+
+.arrow-img {
+  width: 30px;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.category:hover .arrow-img {
+  opacity: 1;
+}
+
+/* kyc section page css */
+
+.kyc-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  align-content: center;
+
+}
+
+.container2 {
+
+  align-items: stretch;
+  justify-content: center;
+  min-height: 640px;
+  padding: 68px 70px;
+  height: 85vh;
+}
+
+/* stocks page  css */
+.container3 {
+  align-items: stretch;
+  justify-content: center;
+  min-height: 640px;
+  padding: 68px 70px;
+  height: 85vh;
+  background-color: rgb(251, 244, 244);
+}
+
+.grid-stocks {
+  display: grid;
+  grid-template-columns: 40% 37% 20%;
+  /* Define column widths */
+  grid-gap: 20px;
+  /* Adjust the gap between grid items */
+}
+
+/* Optional: Style for grid items */
+.grid-stocks .grid-item {
+
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.grid-item p {
+  display: flex;
+  white-space: break-spaces;
+
+  color: rgb(129, 129, 129);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+/* section4 */
+.container4 {
+  background-image: linear-gradient(115deg, rgb(191, 61, 69) 33.33%, rgb(215, 60, 70), 33.33%, rgb(215, 60, 70), 66.66%, rgb(212, 75, 84) 66.66%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 34px 68px;
+  height: 60vh;
+
+}
+
+.container-4-box {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 20px;
+  place-items: center;
+  margin: 50px 0 0;
+  color: white;
+
+  text-align: center;
+  /* margin-left: 30%; */
+}
+
+/* installation section */
+.container5 {
+  margin: auto;
+  height: 80vh;
+  display: flex;
+
+  align-items: stretch;
+  justify-content: space-evenly;
+  padding: 68px 70px;
+
+
+}
+
+.container5-data {
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.left-5c {
+  position: relative;
+  align-items: center;
+
+}
+
+.hoverdiv {
+  height: 90px;
+  width: 300px;
+
+}
+
+.hoverdiv p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  margin-top: 20px;
+}
+
+.hoverdiv p:nth-child(2) {
+  font-size: 15px;
+  font-weight: 300;
+  color: black;
+  display: none;
+  transition-duration: 4s;
+  margin-top: 10px;
+
+}
+
+.hoverdiv:hover p:nth-child(2) {
+  display: block;
+  color: red;
+  font-weight: 700;
+
+}
+
+.download {
+  margin-top: 10px;
+  padding: 0px;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(39, 39, 47);
+}
+
+
+/* top brands section */
+.container-6 {
+  height: 90vh;
+  background-image: url(image3/background4.png);
+  background-repeat: repeat-x;
+  overflow-x: hidden;
+}
+
+.heading6 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15vh;
+  justify-content: center;
+}
+
+.images1 {
+  display: flex;
+}
+
+.images2 {
+  display: flex;
+  margin-top: 40px;
+
+}
+
+.imgcontainer div img {
+  background-color: rgb(232, 237, 240);
+  border-radius: 16px;
+  margin: 0px 20px;
+  height: 112px;
+  width: 112px;
+  /* transition: all ; */
+  animation: scrollimages 5s linear infinite;
+  animation-timing-function: ease-out;
+
+}
+
+@keyframes scrollimages {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+
+    transform: translateX(-900%);
+
+  }
+}
+
+
+
+
+
+/* section-7 */
+.container-7 {
+  padding: 70px 68px;
+  height: 100vh;
+
+}
+
+.container-7-grid {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  margin: auto;
+
+
+}
+
+.container-7-grid div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+
+}
+
+
+.container-7-grid div h1 {
+  white-space: break-spaces;
+  margin: 24px 0px 0px;
+  padding: 0px;
+  color: rgb(39, 39, 47);
+  font-size: 45px;
+  font-weight: 900;
+
+}
+
+.container-7-grid div h3 {
+  white-space: break-spaces;
+  margin: 24px 0px 0px;
+  padding: 0px;
+  color: rgb(129, 129, 129);
+  font-size: 16px;
+  font-weight: 700;
+  max-width: 50%;
+  line-height: 24px;
+
+}
+
+
+/* download section */
+.container-8 {
+  margin-top: -3%;
+  background-image: linear-gradient(115deg, rgb(191, 61, 69) 33.33%, rgb(215, 60, 70), 33.33%, rgb(215, 60, 70), 66.66%, rgb(212, 75, 84) 66.66%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 34px 68px;
+  height: 35vh;
+}
+
+.alligningdiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightside img {
+  width: 50px;
+  margin-top: 50px;
+}
+
+.rightside>div:first-child>p {
+  margin: 0px;
+  color: white;
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.rightside>div:nth-child(2)>p {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 28px;
+  width: 75%;
+}
+
+
+.leftside div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30%;
+
+}
+
+.leftside div span {
+  font-size: 25px;
+  text-transform: capitalize;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* last section */
+.container-9 {
+  background-color: rgb(39, 39, 47);
+  height: 35vh;
+  display: flex; 
+  justify-content: center;
+   align-items: center
+}
+
+.grid9 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  gap: 20px;
+}
+
+.grid9 div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grid9 div a{
+  text-decoration: none;
+ color: rgb(209, 209, 209);;
+}
